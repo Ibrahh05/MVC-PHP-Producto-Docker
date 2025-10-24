@@ -18,6 +18,7 @@ class configDB {
             $this->connect();
         }
      }
+     
 
      private function connect(){
         self::$instance = new PDO(self::$host,self::$user,self::$pass);
@@ -36,7 +37,7 @@ class configDB {
      public function getInstance()
      {
           return self::$instance;
-     }
+}
 }
 
 ?>
